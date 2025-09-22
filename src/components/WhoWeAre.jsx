@@ -52,32 +52,11 @@ export default function WhoWeAre() {
             Omnigas is your trusted provider of high-quality gas solutions for
             residential, commercial, and industrial needs. With a focus on
             excellence, safety, and sustainability, we offer a comprehensive
-            range of propane, natural gas, and specialty gases.
+            range of propane, natural gas, and specialty gases. Our dedicated
+            team is committed to delivering reliable energy solutions that
+            exceed expectations while minimizing environmental impact. Join us
+            in shaping a brighter, greener future with Omnigas
           </motion.p>
-
-          <motion.p
-            custom={3}
-            variants={textVariant}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className="text-gray-700 leading-relaxed"
-          >
-            Our dedicated team is committed to delivering reliable energy
-            solutions that exceed expectations while minimizing environmental
-            impact. Join us in shaping a brighter, greener future with Omnigas.
-          </motion.p>
-
-          <motion.button
-            custom={4}
-            variants={textVariant}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className="px-6 py-3 bg-green-600 text-white font-semibold rounded-xl shadow-md hover:bg-green-700 transition"
-          >
-            Learn More
-          </motion.button>
         </div>
 
         {/* Right: Image */}

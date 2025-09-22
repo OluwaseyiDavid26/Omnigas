@@ -9,6 +9,7 @@ import Services from "./components/Services";
 import Testimonial from "./components/Testimonial";
 import Footer from "./components/Footer";
 import ContactSection from "./components/ContactSection";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               <Services />
               <Testimonial />
               <ContactSection />
+              <ScrollToTop />
               <Footer />
             </>
           }

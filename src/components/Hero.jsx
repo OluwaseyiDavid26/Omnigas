@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="relative z-10 text-white px-6 md:px-16 max-w-2xl">
         {/* Heading */}
         <motion.h1
-          className="text-6xl md:text-4xl font-bold mb-6 leading-tight"
+          className="whitespace-nowrap text-3xl md:text-6xl lg:text-7xl font-bold mb-6"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -33,7 +33,7 @@ const Hero = () => {
 
         {/* Paragraph */}
         <motion.p
-          className="text-sm md:text-lg mb-8 text-gray-100"
+          className="text-base md:text-lg mb-8 text-gray-100"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}

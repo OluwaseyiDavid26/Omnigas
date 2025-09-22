@@ -5,30 +5,36 @@ import logo from "../assets/Asset 1@4x.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const links = [
+    { label: "Home", href: "#" },
+    { label: "About Us", href: "#" },
+    { label: "Key Benefits", href: "#" },
+    { label: "Our Drive", href: "#" },
+    { label: "Our Services", href: "#" },
+    { label: "Contact", href: "#" },
+  ];
+
   return (
-    <nav className="absolute top-0 left-0 w-full z-20 bg-transparent  text-white px-6 py-4 flex justify-between items-center">
+    <nav className="absolute top-0 left-0 w-full z-20 bg-transparent text-white px-6 py-4 flex justify-between items-center">
       {/* Logo */}
       <div>
-        <img src={logo} alt="OmniGas Logo" className="h-18" />
+        <img src={logo} alt="OmniGas Logo" className="h-12" />
       </div>
 
-      {/* Links (Desktop) */}
-      <ul className="hidden md:flex space-x-12 text-[16px] font-medium">
-        <li className="cursor-pointer text-white hover:text-gray-300">Home</li>
-        <li className="cursor-pointer text-white hover:text-gray-300">
-          About Us
-        </li>
-        <li className="cursor-pointer text-white hover:text-gray-300">
-          Key Benefits
-        </li>
-        <li className="cursor-pointer text-white hover:text-gray-300">
-          Our Drive
-        </li>
-        <li className="cursor-pointer text-white hover:text-gray-300">
-          Our Services
-        </li>
+      {/* Desktop Links */}
+      <ul className="hidden md:flex space-x-10 text-[16px] font-medium">
+        {links.map((link) => (
+          <li
+            key={link.label}
+            className="cursor-pointer hover:text-green-300 transition"
+          >
+            <a href={link.href}>{link.label}</a>
+          </li>
+        ))}
       </ul>
-      <button className="bg-white text-green-900 px-6 py-2 rounded-md font-semibold hover:bg-gray-100">
+
+      {/* CTA (Desktop Only) */}
+      <button className="hidden md:inline bg-white text-green-900 px-6 py-2 rounded-md font-semibold hover:bg-green-100 transition">
         CALL US NOW
       </button>
 
@@ -40,17 +46,35 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Dropdown */}
-      {isOpen && (
-        <div className="absolute top-16 left-0 w-full bg-black bg-opacity-80 text-white p-6 flex flex-col space-y-4 md:hidden">
-          <a href="#">Who We Are</a>
-          <a href="#">Our Portfolio</a>
-          <a href="#">Investors</a>
-          <a href="#">Sustainability</a>
-          <a href="#">Careers</a>
-          <a href="#">Owners</a>
-          <a href="#">Contact Us</a>
-        </div>
-      )}
+      <div
+        className={`absolute top-0 left-0 w-full h-screen 
+        bg-gradient-to-b from-green-900 to-green-600 
+        text-white flex flex-col items-center justify-center 
+        space-y-8 transform transition-transform duration-500 ease-in-out md:hidden 
+        ${isOpen ? "translate-y-0" : "-translate-y-full"}`}
+      >
+        <button
+          className="absolute top-6 right-6"
+          onClick={() => setIsOpen(false)}
+        >
+          <X size={28} />
+        </button>
+
+        {links.map((link) => (
+          <a
+            key={link.label}
+            href={link.href}
+            className="text-xl font-semibold tracking-wide hover:text-green-300 transition"
+            onClick={() => setIsOpen(false)}
+          >
+            {link.label}
+          </a>
+        ))}
+
+        <button className="mt-6 bg-white text-green-900 px-8 py-3 rounded-xl font-bold hover:bg-green-100 transition shadow-md">
+          CALL US NOW
+        </button>
+      </div>
     </nav>
   );
 };

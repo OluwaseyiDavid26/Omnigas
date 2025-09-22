@@ -7,7 +7,9 @@ import services2 from "../assets/sv2.png";
 import services3 from "../assets/sv3.png";
 import services4 from "../assets/sv4.png";
 import services5 from "../assets/sv5.png";
-import services6 from "../assets/sv8.png";
+import services6 from "../assets/sv6.png";
+import services7 from "../assets/sv7.png";
+import services8 from "../assets/sv8.png";
 
 const services = [
   {
@@ -23,32 +25,32 @@ const services = [
   {
     title: "Industrial Gas Supply",
     img: services3,
-    desc: "Omnigas delivers efficient industrial gas supply to support production, heating, and large-scale applications with safety and reliability.",
+    desc: "Omnigas provides dependable and efficient gas supply solutions for residential heating, cooking, and water heating needs, ensuring comfort and convenience for households.",
   },
   {
     title: "Specialty Gases",
     img: services4,
-    desc: "Our specialty gases support unique industrial and scientific processes with the highest standards of quality and precision.",
+    desc: "Omnigas provides dependable and efficient gas supply solutions for residential heating, cooking, and water heating needs, ensuring comfort and convenience for households.",
   },
   {
     title: "Safety Inspection & Training",
     img: services5,
-    desc: "We offer safety inspection and training to ensure safe handling and proper usage of gas systems for both individuals and organizations.",
+    desc: "Omnigas provides dependable and efficient gas supply solutions for residential heating, cooking, and water heating needs, ensuring comfort and convenience for households",
   },
   {
     title: "Emergency Response Service",
     img: services6,
-    desc: "Our emergency response team is always on standby to provide quick and reliable support during gas-related incidents or emergencies.",
+    desc: "Omnigas provides dependable and efficient gas supply solutions for residential heating, cooking, and water heating needs, ensuring comfort and convenience for households.",
   },
   {
     title: "Emergency Response Service",
-    img: services6,
-    desc: "Our emergency response team is always on standby to provide quick and reliable support during gas-related incidents or emergencies.",
+    img: services7,
+    desc: "Omnigas provides dependable and efficient gas supply solutions for residential heating, cooking, and water heating needs, ensuring comfort and convenience for households.",
   },
   {
     title: "Emergency Response Service",
-    img: services6,
-    desc: "Our emergency response team is always on standby to provide quick and reliable support during gas-related incidents or emergencies.",
+    img: services8,
+    desc: "Omnigas provides dependable and efficient gas supply solutions for residential heating, cooking, and water heating needs, ensuring comfort and convenience for households.",
   },
 ];
 
@@ -72,7 +74,7 @@ export default function Services() {
           {services.map((service, i) => (
             <div
               key={i}
-              className="relative h-64 rounded-2xl overflow-hidden shadow-lg cursor-pointer group"
+              className="relative h-78 rounded-2xl overflow-hidden shadow-lg cursor-pointer group"
             >
               {/* Background image */}
               <div
@@ -92,7 +94,7 @@ export default function Services() {
                   initial={{ opacity: 0, y: 20 }}
                   whileHover={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4 }}
-                  className="text-sm mt-3 bg-black/60 rounded-lg p-3 opacity-0 group-hover:opacity-100"
+                  className="text-sm mt-3 rounded-lg p-3 opacity-0 group-hover:opacity-100"
                 >
                   {service.desc}
                 </motion.p>
