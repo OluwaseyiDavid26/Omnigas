@@ -15,7 +15,10 @@ const textVariant = {
 
 export default function WhoWeAre() {
   return (
-    <section className="bg-gradient-to-br from-green-50 to-green-100 py-16 px-6 md:px-20">
+    <section
+      id="about"
+      className="bg-gradient-to-br from-green-50 to-green-100 py-16 px-6 md:px-20"
+    >
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left: Text */}
         <div className="space-y-6">

@@ -5,6 +5,7 @@ import heroBg from "../assets/hero-1.png";
 const Hero = () => {
   return (
     <section
+      id="hero"
       className="relative h-screen w-full bg-cover bg-center flex items-center"
       style={{ backgroundImage: `url(${heroBg})` }}
     >

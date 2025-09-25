@@ -17,6 +17,9 @@
 * {
   font-family: "Inter", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .clip-diagonal {
   clip-path: polygon(0 0, 20% 0, 50% 100%, 0% 100%);

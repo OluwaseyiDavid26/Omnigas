@@ -3,7 +3,10 @@ import { Target } from "lucide-react";
 
 export default function WhatDrivesUs() {
   return (
-    <section className="relative bg-gradient-to-b from-green-50 to-white py-24 px-6 md:px-20 overflow-hidden">
+    <section
+      id="mission"
+      className="relative bg-gradient-to-b from-green-50 to-white py-24 px-6 md:px-20 overflow-hidden"
+    >
       {/* floating accents */}
       <div className="absolute -top-10 left-0 w-72 h-72 bg-green-200 rounded-full blur-3xl opacity-40"></div>
       <div className="absolute top-40 -right-20 w-96 h-96 bg-emerald-300 rounded-full blur-3xl opacity-30"></div>

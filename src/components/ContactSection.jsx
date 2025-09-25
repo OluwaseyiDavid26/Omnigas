@@ -3,7 +3,10 @@ import { MapPin, Phone, Mail } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section className="bg-gradient-to-b from-white to-green-100 text-black py-20 px-6">
+    <section
+      className="bg-gradient-to-b from-white to-green-100 text-black py-20 px-6"
+      id="contact"
+    >
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Side */}
         <div>
