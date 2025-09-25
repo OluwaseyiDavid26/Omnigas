@@ -3,9 +3,9 @@ import { Star } from "lucide-react";
 import { motion } from "framer-motion";
 
 // Example local images (replace with yours)
-import client1 from "../assets/chiamaka-Bgujc6R0.jpg";
-import client2 from "../assets/chiamaka-Bgujc6R0.jpg";
-import client3 from "../assets/chiamaka-Bgujc6R0.jpg";
+import client1 from "../assets/h3.jpg";
+import client2 from "../assets/h2.jpg";
+import client3 from "../assets/h4.jpg";
 
 const testimonials = [
   {
