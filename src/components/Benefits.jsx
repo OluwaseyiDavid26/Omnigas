@@ -10,12 +10,12 @@ const benefits = [
   {
     title: "Reliability",
     icon: CheckCircle2,
-    desc: "As stewards of the environment, Omnigas is dedicated to promoting sustainability in every facet of our business. We recognize the importance of reducing our carbon footprint and minimizing environmental impact. That's why we've implemented eco-friendly practices and initiatives throughout our operations, from sourcing and production to distribution and beyond. By prioritizing renewable energy sources, optimizing efficiency, and investing in innovative technologies, we're working towards a greener future for generations to come. When you choose Omnigas, you're not just choosing a gas supplier – you're partnering with a company that's committed to environmental responsibility and sustainable practices.",
+    desc: "As OmniGas, reliability is not just a problem, it is a cornerstone of our services. We understand the importance of uninterrupted gas supply for your daily life or business operation. That is why we have invested in robust infrastructure and logistics to ensure that you always have access to the gas you need when you need it, whether it is heating your home during the coldest months of the year or fueling critical industrial processes. You can count on OmniGas to deliver a consistent and reliable supply of high-quality gas, given your energy sources.",
   },
   {
     title: "Safety",
     icon: ShieldCheck,
-    desc: "As stewards of the environment, Omnigas is dedicated to promoting sustainability in every facet of our business. We recognize the importance of reducing our carbon footprint and minimizing environmental impact. That's why we've implemented eco-friendly practices and initiatives throughout our operations, from sourcing and production to distribution and beyond. By prioritizing renewable energy sources, optimizing efficiency, and investing in innovative technologies, we're working towards a greener future for generations to come. When you choose Omnigas, you're not just choosing a gas supplier – you're partnering with a company that's committed to environmental responsibility and sustainable practices.",
+    desc: "Your safety is our top priority at Omnigas. We adhere to the strictest safety standards and protocols to ensure that every aspect of our operations, from gas production and storage to delivery and usage, is conducted with utmost care and caution. Our team undergo rigorous training to mitigate potential risks and undo emergencies effectively. Additionally, we continually invest in advanced technologies and safety measures to ensure safeguard our customers, employees, and communities. With Omnigas, you can rest assured that your gas supply is not only reliable, but also backed by a steadfast commitment to safety.",
   },
 ];
 
